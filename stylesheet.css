@@ -146,19 +146,46 @@ button:hover {
     margin-top: 20px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
-.contact .social-links a {
-    display: inline-block;
-    margin: 10px;
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Reduced width */
+    height: 40px; /* Reduced height */
+    font-size: 16px; /* Slightly smaller font */
+    color: #fff;
     text-decoration: none;
-    color: #1e90ff;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.contact .social-links a:hover {
-    color: #00bfff;
+.social-links a i {
+    margin-right: 6px;
 }
+
+/* Custom colors for each platform */
+.social-links a[href*="wa.me"] {
+    background: #25D366;
+}
+
+.social-links a[href*="linkedin"] {
+    background: #0077b5;
+}
+
+.social-links a[href*="github"] {
+    background: #333;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
 
 footer {
     text-align: center;
